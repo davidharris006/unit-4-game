@@ -1,0 +1,65 @@
+body {
+    background-color: antiquewhite;
+}
+.images {
+    width: 100px;
+    height: 100px;
+    
+    margin: 5px;
+    flex-direction: row;
+    align-content: center;
+}
+#jewelimage-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    margin: 40px 0 0 0;
+}
+#instructions-text{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100vw;
+    text-align: center;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.statustext-container {
+    display:flex;
+    justify-content: space-between;
+}
+.winslosecont {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 15px;
+    padding: 5px;
+    
+
+}
+.targetcont {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 15px;
+    padding: 5px;
+
+}
+#jewel-1 {
+    background-image: url('../Images/Jewel1.png');
+    background-size: cover;
+}
+#jewel-2 {
+    background-image: url('../Images/Jewel2.png');
+    background-size: cover;
+}
+#jewel-3 {
+    background-image: url('../Images/Jewel3.png');
+    background-size: cover;
+}
+#jewel-4 {
+    background-image: url('../Images/Jewel4.png');
+    background-size: cover;
+}
