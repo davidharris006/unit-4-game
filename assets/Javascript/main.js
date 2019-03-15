@@ -10,11 +10,11 @@ $(document).ready(function () {
     var randomvalforjewels = [];
     var targetVarible;
     var dispvalue = 0;
-    var wins =0;
-    var loses =0;
-   
+    var wins = 0;
+    var loses = 0;
+
     function resettargetvalue() {
-        dispvalue=0;
+        dispvalue = 0;
         for (i = 19; i < 120; i++) {
             randomTargetvalarr.push(i);
 
@@ -23,17 +23,17 @@ $(document).ready(function () {
         $('#target-text').text("Target Number: " + targetVarible);
         $('#usernumber-text').text("Your Number: " + dispvalue)
         $('#target-text').attr("value", targetVarible)
-        
+
     }
     function resetcrystalvalue() {
-        randomvalforjewels=[];
+        randomvalforjewels = [];
         for (j = 1; j < 12; j++) {
             randomjewelvaluearr.push(j);
         }
         for (l = 0; l < 4; l++) {
             var jewelrandval = randomjewelvaluearr[Math.floor(Math.random() * randomjewelvaluearr.length)];
             randomvalforjewels.push(jewelrandval);
-            
+
         }
         console.log(randomvalforjewels);
         $('#jewel-1').attr("value", randomvalforjewels[0])
@@ -49,48 +49,48 @@ $(document).ready(function () {
         var targetVaribleint = parseInt(targetVaribletext);
         console.log(dispvalue)
         console.log(targetVaribletext)
-        if (dispvalueint === targetVaribleint){
-            
+        if (dispvalueint === targetVaribleint) {
+
             alert("YOU WON!!OMGGGGG");
             resetcrystalvalue();
             resettargetvalue();
             wins++;
-            
+
         }
         else if (dispvalueint > targetVaribleint) {
             alert("YOU SUCK!")
             resetcrystalvalue();
             resettargetvalue();
             loses++;
-            
+
         }
         $('#winstext').text("Wins: " + wins)
         $('#losestext').text("Loeses: " + loses)
     }
 
-    $('#jewel-1').on('click', function() {
+    $('#jewel-1').on('click', function () {
         var jewelsval = $('#jewel-1').attr('value');
         var jewelsvalint = parseInt(jewelsval)
         dispvalue += jewelsvalint
         $('#usernumber-text').text("Your Number: " + dispvalue)
         comparevals();
-        
+
     })
-    $('#jewel-2').on('click', function() {
+    $('#jewel-2').on('click', function () {
         var jewelsval = $('#jewel-2').attr('value');
         var jewelsvalint = parseInt(jewelsval)
         dispvalue += jewelsvalint
         $('#usernumber-text').text("Your Number: " + dispvalue)
         comparevals();
     })
-    $('#jewel-3').on('click', function() {
+    $('#jewel-3').on('click', function () {
         var jewelsval = $('#jewel-3').attr('value');
         var jewelsvalint = parseInt(jewelsval)
         dispvalue += jewelsvalint
         $('#usernumber-text').text("Your Number: " + dispvalue)
         comparevals();
     })
-    $('#jewel-4').on('click', function() {
+    $('#jewel-4').on('click', function () {
         var jewelsval = $('#jewel-4').attr('value');
         var jewelsvalint = parseInt(jewelsval)
         dispvalue += jewelsvalint
@@ -98,11 +98,11 @@ $(document).ready(function () {
         comparevals();
     })
 
-   
-  
-resettargetvalue();
-resetcrystalvalue();
-comparevals();
+
+
+    resettargetvalue();
+    resetcrystalvalue();
+    comparevals();
 
 });
 // end of code
