@@ -23,7 +23,7 @@ $(document).ready(function () {
         $('#target-text').text("Target Number: " + targetVarible);
         $('#usernumber-text').text("Your Number: " + dispvalue)
         $('#target-text').attr("value", targetVarible)
-
+        
     }
     function resetcrystalvalue() {
         randomvalforjewels = [];
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
         }
         else if (dispvalueint > targetVaribleint) {
-            alert("YOU SUCK!")
+            alert("YOU LOST!:(```  Please try agian.")
             resetcrystalvalue();
             resettargetvalue();
             loses++;

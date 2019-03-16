@@ -1,5 +1,6 @@
 body {
     background-color: antiquewhite;
+    width: 100vw;
 }
 .images {
     width: 100px;
@@ -36,8 +37,14 @@ p {
     border: 3px solid rgb(49, 49, 49);
     border-radius: 15px;
     padding: 5px;
-    
-
+    font-size: 20px;
+    background-color: white;
+}
+#losestext {
+    margin-top: 15px;
+}
+#emptyspace-div {
+    display: flex;
 }
 .targetcont {
     display: flex;
@@ -45,7 +52,8 @@ p {
     border: 3px solid rgb(49, 49, 49);
     border-radius: 15px;
     padding: 5px;
-
+    font-size: 30px;
+    background-color: white;
 }
 #jewel-1 {
     background-image: url('../Images/Jewel1.png');
